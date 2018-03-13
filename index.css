@@ -1,0 +1,284 @@
+:root {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background: #f8f8f8;
+  flex-direction: column;
+}
+
+.navigation-bar {
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  height: 10%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation-item {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  height: 400px;
+  background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.about-name-block {
+  background: rgba(54, 25, 25, 0.5);
+  width: 200px;
+  height: 10%;
+}
+
+.about-designation-block {
+  background: rgba(54, 25, 25, 0.5);
+  margin-top: 2%;
+  width: 35%;
+  height: 10%;
+}
+
+.description-block {
+  background: rgba(54, 25, 25, 0.5);
+  margin-top: 2%;
+  width: 98%;
+  height: 60%;
+}
+
+.about-text {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.interest-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8f8f8;
+  width: 100%;
+  margin: 0.2%;
+  justify-content: space-around;
+}
+
+.java-container {
+  background: black;
+  background-image: url("https://cdn-images-1.medium.com/max/1600/1*ZGEUEy_SifxtHG-CSAWsZA.png");
+  background-size: 100% 100%;
+  height: 250px;
+ 
+}
+
+.android-container {
+  background: black;
+  background-image: url("https://assets.wired.com/photos/w_582/wp-content/uploads/2016/05/android.jpg");
+  background-size: 100% 100%;
+  height: 250px;
+  
+}
+
+.full-stack-container {
+  background: black;
+  background-image: url("http://www.purelogics.net/blog/wp-content/uploads/2017/07/meanstack.jpg");
+  background-size: 100% 100%;
+  margin: 0.2%;
+}
+
+.ai-container {
+  background: black;
+  background-image: url("https://www.techworm.net/wp-content/uploads/2017/11/960x0-696x464.jpg");
+  background-size: 100% 100%;
+  margin: 0.2%;
+}
+
+.cover {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.cover-text {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: black;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.cover:hover {
+  opacity: 0.5;
+}
+
+.heading-font {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #ebcd1e;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f8f8f8;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.project-item {
+  background: #7c7c7c;
+  height: 200px;
+  margin: 0.2%;
+}
+
+.project-cover-text {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.project-cover-background {
+  background: rgba(54, 25, 25, 0.5);
+}
+
+.mean-machine-cover {
+  background-image: url("https://i.imgur.com/5uyJcvd.png");
+  background-size: 100% 100%;
+  margin: 0.2%;
+}
+
+.doggie-cover {
+  background-image: url("https://i.imgur.com/LJNRVVj.png");
+  background-size: 100% 100%;
+  margin: 0.2%;
+}
+
+.uMusic-cover {
+  background-image: url("https://i.imgur.com/dnO2GFE.png");
+  background-size: 100% 100%;
+  margin: 0.2%;
+}
+
+.portfolio-cover {
+  background-image: url("https://i.imgur.com/xfexOia.jpg");
+  background-size: 100% 100%;
+  margin: 0.2%;
+}
+
+
+/*use media queries to change the layout*/
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    width: 45%;/*400px;*/
+  }
+
+  .java-container {
+    width: 45%;
+  }
+  .android-container {
+    width: 40%;
+  }
+  .full-stack-container {
+    width: 45%;
+    height: 350px;
+  }
+
+  .ai-container {
+    width: 50%;
+    height: 350px;
+  }
+
+  .about-container {
+    height: 400px;
+  }
+
+  .heading-font {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-item {
+    width: 80%;
+  }
+  .java-container {
+    width: 45%;
+  }
+  .android-container {
+    width: 50%;
+  }
+  .full-stack-container {
+    width: 100%;
+    height: 350px;
+  }
+  .ai-container {
+    width: 100%;
+    height: 350px;
+  }
+  .about-text {
+    font-size: 1.2rem;
+  }
+  .about-container {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+   
+  .java-container,
+  .project-item {
+    width: 100%;
+  }
+
+  .android-container {
+    width: 100%;
+  }
+
+  .full-stack-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .ai-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+  
+  .about-container {
+    height: 550px;
+  }
+}
