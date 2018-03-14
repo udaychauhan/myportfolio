@@ -194,7 +194,12 @@ body {
   margin: 0.2%;
 }
 
-
+.redirect-button{
+  width:20%;
+  height:40%;
+  margin-left:2%;
+  float:left;
+ }
 /*use media queries to change the layout*/
 
 @media screen and (min-width: 768px) {
@@ -251,6 +256,10 @@ body {
   .about-container {
     height: 450px;
   }
+  
+  .navigation-bar{
+	  height:20%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -280,5 +289,9 @@ body {
   
   .about-container {
     height: 550px;
+  }
+  
+  .navigation-bar{
+	  height:40%;
   }
 }
